@@ -94,4 +94,4 @@ wp-content/themes/twenty*/
 wp-content/themes/fredfifteen/node_modules/
 
 # ignore unbuilt bower stuff
-wp-content/themes/fredfifteen/bower_components/
+wp-content/themes/fredfifteen/src/vendor/*
