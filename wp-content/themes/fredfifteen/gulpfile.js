@@ -6,8 +6,8 @@ var less = require('gulp-less');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 // var utility = require('gulp-util');
-var bowerMain = require('bower-main');
 var uglify = require('gulp-uglify');
+var minifyCSS = require('gulp-minify-css');
 
 var onError = function( err ) {
   console.log( 'An error occurred:', err.message );
@@ -30,13 +30,11 @@ gulp.task('js', function() {
 
 // CSS
 gulp.task('css', function () {
-	var bowerCSS = bowerMain('css').normal; 
 	
 	return gulp.src('src/css/main.less') //path to your main less file
 		.pipe( plumber( { errorHandler: onError } ) )
 		.pipe(less())
-		.pipe(concat(gulp.src(bowerCSS)))
-		.pipe(uglify())
+		// .pipe(minifyCSS())
 		.pipe(rename('fredfifteen.css'))
 		.pipe(gulp.dest(dest + 'css')); // your output folder
  });
