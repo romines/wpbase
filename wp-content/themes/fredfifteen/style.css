@@ -12,3 +12,14 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 This simple theme was built using the example Bootstrap theme "Navbar example" found on the Bootstrap web site http://getbootstrap.com/examples/navbar/
 */
+
+@import url('public/css/fredfifteen.css');
+
+/*@import url('src/vendor/bootstrap/dist/css/bootstrap.css');
+@import url('src/vendor/bootstrap/dist/css/bootstrap-theme.css');*/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
