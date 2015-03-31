@@ -9,6 +9,7 @@
   "author": "aromines",
   "license": "ISC",
   "devDependencies": {
+    "bower-main": "^0.2.14",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-filter": "^2.0.2",

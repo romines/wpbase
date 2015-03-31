@@ -2,17 +2,17 @@
 /**
  * Enqueue scripts and styles
  */
-
+add_action( 'wp_enqueue_scripts', 'fredfifteen_scripts' );
 
 
 function fredfifteen_scripts() {
 	// print '<-- fredfifteen! -->';
 	// // wp_deregister_script('jquery');
 	//
-
-	wp_enqueue_style( 'fredfifteen', get_template_directory_uri() . '/public/css/fredfifteen.css', array(), '1.0.0', 'all' );
+	echo "<script type='text/javascript'>alert('fredfifteen_scripts fired');</script>";
+	// wp_enqueue_style( 'fredfifteen', get_template_directory_uri() . '/public/css/fredfifteen.css', array(), '1.0.0', 'all' );
 	// // wp_enqueue_script( 'script-name', get_template_directory_uri() . 'public/js/main.js', array(), '1.0.0', true );
 }
 
-add_action( 'wp_enqueue_scripts', 'fredfifteen_scripts' );
+
 ?>

@@ -4,17 +4,17 @@
   "authors": [
     "Adam Romines <adam.romines@gmail.com>"
   ],
-  "moduleType": [
-    "globals"
-  ],
+  "main": "src/js/*",
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src/vendor/"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
 }
