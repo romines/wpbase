@@ -80,6 +80,9 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
+wp-content/plugins/index.php
+wp-content/themes/index.php
+
 # ignore contents of build folder
 wp-content/themes/fredfifteen/public/*
 
