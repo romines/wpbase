@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 		
-	<!-- <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">	 -->
+	<?php wp_head(); ?>
   </head>
 
   <body>
