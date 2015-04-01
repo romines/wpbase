@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php wp_head(); ?>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -30,4 +30,4 @@
       </div>
 
 
-<?php get_footer(); ?>
+<?php wp_footer(); ?>
